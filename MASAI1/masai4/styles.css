@@ -1,0 +1,47 @@
+/* Apply box-sizing for better spacing calculations */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;  /* Center the boxes */
+    gap: 15px;                /* Space between boxes */
+    padding: 20px;
+    flex-wrap: wrap;          /* Ensures responsiveness */
+}
+
+/* Box styling */
+.box {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: 2px solid black;
+    margin: 10px;
+    position: relative; /* Changed from absolute */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Fixed position text */
+.text {
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    background: yellow;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
