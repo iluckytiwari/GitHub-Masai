@@ -1,0 +1,40 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Default: Single column */
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1 1 100%;
+}
+
+/* 🖥️ Two-column layout for screens >768px */
+@media (min-width: 768px) {
+    .box {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* 💻 Three-column layout for screens >1024px */
+@media (min-width: 1024px) {
+    .box {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
