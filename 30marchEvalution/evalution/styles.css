@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #84057c, #08b0bf);
+    color: rgb(127, 196, 63);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections Styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: rgb(21, 168, 208);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d167ce;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background: #030851;
+    color: rgb(247, 242, 242);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #575fcf;
+}
+
+/* Recipe Cards */
+#recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 100%;
+    }
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.dark-mode header {
+    background: linear-gradient(to right, #333, #555);
+}
+
+.dark-mode nav ul li a {
+    color: rgb(255, 204, 0);
+}
+
+.dark-mode section {
+    background: #222;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+    background: #ff9800;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background: #ff5722;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    background: #333;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#dark-mode-toggle:hover {
+    background: #444;
+}
